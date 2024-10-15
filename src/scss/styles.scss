@@ -1,0 +1,16 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Example of custom SCSS code using new recommended functions
+$color: #ff0000;
+
+.r {
+  color: color.channel($color, "red", $space: rgb);
+}
+
+.g {
+  color: color.channel($color, "green", $space: rgb);
+}
+
+.b {
+  color: color.channel($color, "blue", $space: rgb);
+}
