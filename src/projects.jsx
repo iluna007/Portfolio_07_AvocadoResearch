@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CardProject from "./components/CardProject.jsx"; // Corrected import path
+import CardProject from "./components/Cardproject.jsx"; // Corrected import path
 
 const Projects = () => {
   const [filter, setFilter] = useState("All");
