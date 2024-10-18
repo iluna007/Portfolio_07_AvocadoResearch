@@ -38,8 +38,9 @@ const Footer = () => {
             </a>
           </div>
           <p className="text-body-secondary">
-            © 2024 Finnja Wilmer. All rights reserved. Web design by: Iker Luna
-            Prototype V1.0
+            Produced by MA cohort 2023–24 at the Centre for Research
+            Architecture, Goldsmiths University: xxx,xxx,xxx,xxx. With thanks to
+            xxx,xxx,xxx,xxx,. Web Development Iker Luna.
           </p>
         </footer>
       </div>

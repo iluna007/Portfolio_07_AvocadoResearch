@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import Body1 from "./body1";
 
 const Home = () => {
   const videoRef = useRef(null);
@@ -6,20 +7,13 @@ const Home = () => {
   useEffect(() => {
     const video = videoRef.current;
 
-    const handleCanPlay = () => {
-      console.log("Video can play");
-      video.play();
-    };
-
     const handleError = (e) => {
       console.error("Error loading video", e);
     };
 
-    video.addEventListener("canplay", handleCanPlay);
     video.addEventListener("error", handleError);
 
     return () => {
-      video.removeEventListener("canplay", handleCanPlay);
       video.removeEventListener("error", handleError);
     };
   }, []);
@@ -33,7 +27,9 @@ const Home = () => {
         autoPlay
         loop
         type="video/quicktime"
+        muted
       ></video>
+      <Body1 />
     </>
   );
 };
