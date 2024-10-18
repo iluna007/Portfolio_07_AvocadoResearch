@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import Chapter1 from "./chapter1";
 import Chapter2 from "./chapter2";
 import Chapter3 from "./chapter3";
+import Chapter4 from "./chapter4";
+import Chapter5 from "./chapter5";
 
 const Body1 = () => {
   const videoRef = useRef(null);
@@ -103,6 +105,52 @@ const Body1 = () => {
                 >
                   <div className="accordion-body">
                     <Chapter3 />
+                  </div>
+                </div>
+              </div>
+              <div className="accordion-item">
+                <h2 className="accordion-header">
+                  <button
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Chapter 4
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className="accordion-body">
+                    <Chapter4 />
+                  </div>
+                </div>
+              </div>
+              <div className="accordion-item">
+                <h2 className="accordion-header">
+                  <button
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Chapter 5
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className="accordion-body">
+                    <Chapter5 />
                   </div>
                 </div>
               </div>
