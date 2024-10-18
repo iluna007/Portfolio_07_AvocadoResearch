@@ -40,7 +40,7 @@ const Footer = () => {
           <p className="text-body-secondary">
             Produced by MA cohort 2023–24 at the Centre for Research
             Architecture, Goldsmiths University: xxx,xxx,xxx,xxx. With thanks to
-            xxx,xxx,xxx,xxx,. Web Development Iker Luna.
+            xxx,xxx,xxx,xxx,. Web Development: xxx.
           </p>
         </footer>
       </div>
