@@ -4,38 +4,15 @@ import Chapter2 from "./chapter2";
 import Chapter3 from "./chapter3";
 import Chapter4 from "./chapter4";
 import Chapter5 from "./chapter5";
+import MapComponent from "./map";
 
 const Body1 = () => {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-
-    const handleError = (e) => {
-      console.error("Error loading video", e);
-    };
-
-    video.addEventListener("error", handleError);
-
-    return () => {
-      video.removeEventListener("error", handleError);
-    };
-  }, []);
-
   return (
     <>
       <div className="container-fluid text-center vh-100% d-flex p-0">
         <div className="row w-100 h-100 m-0">
           <div className="col-6 d-flex align-items-center h-100 p-0">
-            <video
-              ref={videoRef}
-              src="public/Reel_provisorio.MOV"
-              className="w-100 h-100"
-              autoPlay
-              loop
-              type="video/quicktime"
-              muted
-            ></video>
+            <MapComponent />
           </div>
           <div className="col-6 d-flex align-items-center justify-content-center h-100% p-100%">
             <div className="accordion" id="accordionExample">
