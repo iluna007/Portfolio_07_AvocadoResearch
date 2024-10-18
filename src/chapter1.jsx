@@ -13,14 +13,7 @@ const Chapter1 = () => {
             inventore eum numquam quia sit obcaecati eligendi sed expedita enim
             et laborum sunt.
           </p>
-          <p>
-            Et voluptatem asperiores est nulla ipsum in placeat dolorem non
-            excepturi consequatur non magnam architecto et quisquam mollitia in
-            minus galisum. Ea corrupti atque ut vero blanditiis et tempore
-            mollitia a ipsum nemo ut ipsa accusantium et laboriosam nisi est
-            quia quae. Aut dolorem illo quo maiores ducimus est harum
-            consequatur.
-          </p>
+
           <p>
             Et perferendis dolorum 33 dolorem voluptatem sit eaque tempora qui
             iusto sunt et animi aliquam? Quo voluptatum Quis sed laboriosam
