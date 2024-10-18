@@ -16,7 +16,7 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/ikerluna/cm2dk18gv007l01ph2anbepkk",
+      style: "mapbox://styles/ikerluna/cm2dk18gv007l01ph2anbepkk", // Replace with your Mapbox style URL
       center: [-99.1332, 19.4326], // Coordinates for Mexico City (Mexico DF)
       zoom: 1.2 // Adjust zoom level for a closer view of Mexico City
     });
@@ -39,9 +39,9 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
       onMarkerClick("chapter1"); // Trigger click to open Chapter 1
     });
 
-    // Create a marker at Mexico City's coordinates
+    // Create a marker at Aputzio's coordinates
     const marker2 = new mapboxgl.Marker()
-      .setLngLat([-100.3511418263735, 19.33751532408707]) // Coordinates for Mexico City
+      .setLngLat([-100.3511418263735, 19.33751532408707]) // Coordinates for Aputzio
       .addTo(map);
 
     // Create a popup and attach it to the marker
@@ -52,7 +52,7 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
 
     // Handle marker click to notify parent component
     marker2.getElement().addEventListener("click", () => {
-      onMarkerClick("chapter2"); // Trigger click to open Chapter 1
+      onMarkerClick("chapter2"); // Trigger click to open Chapter 2
     });
 
     return () => map.remove(); // Clean up on component unmount
@@ -73,11 +73,9 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
     <div
       ref={mapContainer}
       style={{
-        width: "100vh",
-        height: "100vh",
-        position: "relative",
-        top: 0,
-        bottom: 0
+        width: "100%",
+        height: "50vh", // Adjusted height for small screens
+        position: "relative"
       }}
     />
   );

@@ -23,13 +23,16 @@ const Body1 = () => {
 
   return (
     <>
-      <div className="container-fluid text-center vh-100% d-flex p-0">
+      <div className="container-fluid text-center vh-100 p-0">
         <div className="row w-100 h-100 m-0">
-          <div className="col-6 d-flex align-items-center h-100 p-0">
+          {/* Map on the left for larger screens, full width for small screens */}
+          <div className="col-lg-6 col-md-12 d-flex align-items-center h-100 p-0">
             <MapComponent ref={mapRef} onMarkerClick={setActiveChapter} />
           </div>
-          <div className="col-6 d-flex align-items-center justify-content-center h-100% p-100%">
-            <div className="accordion" id="accordionExample">
+
+          {/* Accordion on the right for larger screens, full width for small screens */}
+          <div className="col-lg-6 col-md-12 d-flex flex-column align-items-center justify-content-center h-100 p-3">
+            <div className="accordion w-100" id="accordionExample">
               <div className="accordion-item">
                 <h2 className="accordion-header">
                   <button
@@ -58,6 +61,7 @@ const Body1 = () => {
                   </div>
                 </div>
               </div>
+
               {/* Repeat similar structure for Chapter 2, 3, 4, 5 */}
               <div className="accordion-item">
                 <h2 className="accordion-header">
@@ -90,6 +94,7 @@ const Body1 = () => {
                   </div>
                 </div>
               </div>
+
               {/* Similar structure for the other chapters */}
             </div>
           </div>
