@@ -6,9 +6,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./home";
-import Chapter1 from "./chapter1";
-import Chapter2 from "./chapter2";
-import Chapter3 from "./chapter3";
+import FieldProduction from "./FieldProduction";
+import Border from "./Border";
+import CECOffice from "./CECOffice";
+import CU from "./CU";
+import USC from "./USC";
 
 function App() {
   return (
@@ -18,9 +20,11 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Chapter1" element={<Chapter1 />} />
-            <Route path="/Chapter2" element={<Chapter2 />} />
-            <Route path="/Chapter3" element={<Chapter3 />} />
+            <Route path="/FieldProduction" element={<FieldProduction />} />
+            <Route path="/Border" element={<Border />} />
+            <Route path="/CECOffice" element={<CECOffice />} />
+            <Route path="/CU" element={<CU />} />
+            <Route path="/USC" element={<USC />} />
           </Routes>
         </div>
       </>

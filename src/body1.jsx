@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
-import Chapter1 from "./chapter1";
-import Chapter2 from "./chapter2";
-import Chapter3 from "./chapter3";
-import Chapter4 from "./chapter4";
-import Chapter5 from "./chapter5";
+import FieldProduction from "./FieldProduction";
+import Border from "./Border";
+import CECOffice from "./CECOffice";
+import Chapter4 from "./CU";
+import Chapter5 from "./USC";
 import MapComponent from "./map";
 
 const Body1 = () => {
@@ -32,7 +32,10 @@ const Body1 = () => {
 
           {/* Accordion on the right for larger screens, full width for small screens */}
           <div className="col-lg-6 col-md-12 d-flex flex-column align-items-center justify-content-center h-100 p-3">
-            <div className="accordion w-100" id="accordionExample">
+            <div
+              className="accordion accordion-flush w-100"
+              id="accordionFlushExample"
+            >
               <div className="accordion-item">
                 <h2 className="accordion-header">
                   <button
@@ -40,29 +43,31 @@ const Body1 = () => {
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseOne"
-                    aria-expanded={activeChapter === "chapter1"}
+                    aria-expanded={activeChapter === "FieldProduction"}
                     aria-controls="collapseOne"
                     onClick={() =>
-                      handleChapterClick("chapter1", [-99.1332, 19.4326])
-                    } // Coordinates for Chapter 1
+                      handleChapterClick(
+                        "Field Production",
+                        [-100.35974467916512, 19.38365910396591]
+                      )
+                    } //* Coordinates for Chapter 119.38365910396591, -100.35974467916512
                   >
-                    Document 1
+                    Field Production
                   </button>
                 </h2>
                 <div
                   id="collapseOne"
                   className={`accordion-collapse collapse ${
-                    activeChapter === "chapter1" ? "show" : ""
+                    activeChapter === "FieldProduction" ? "show" : ""
                   }`}
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    <Chapter1 />
+                    <p>info images video etc</p>
                   </div>
                 </div>
               </div>
 
-              {/* Repeat similar structure for Chapter 2, 3, 4, 5 */}
               <div className="accordion-item">
                 <h2 className="accordion-header">
                   <button
@@ -70,32 +75,130 @@ const Body1 = () => {
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo"
-                    aria-expanded={activeChapter === "chapter2"}
+                    aria-expanded={activeChapter === "Border"}
                     aria-controls="collapseTwo"
                     onClick={() =>
                       handleChapterClick(
-                        "chapter2",
-                        [-100.3511418263735, 19.33751532408707]
+                        "USDA/APHIS/VS Quarantine Pens Nuevo",
+                        [-99.50420943878446, 27.592231323639766]
+                        /**19.38365910396591, -100.35974467916512
+
+
+                         */
                       )
                     } // Example coordinates for Chapter 2
                   >
-                    Document 2
+                    USDA/APHIS/VS Quarantine Pens Nuevo
                   </button>
                 </h2>
                 <div
                   id="collapseTwo"
                   className={`accordion-collapse collapse ${
-                    activeChapter === "chapter2" ? "show" : ""
+                    activeChapter === "Border" ? "show" : ""
                   }`}
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    <Chapter2 />
+                    <p>info images video etc</p>
                   </div>
                 </div>
               </div>
 
-              {/* Similar structure for the other chapters */}
+              <div className="accordion-item">
+                <h2 className="accordion-header">
+                  <button
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded={activeChapter === "CECOffice"}
+                    aria-controls="collapseThree"
+                    onClick={() =>
+                      handleChapterClick(
+                        "CECOffice",
+                        [-73.56440027437311, 45.50111304777613]
+                      )
+                    }
+                  >
+                    CEC Office
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  className={`accordion-collapse collapse ${
+                    activeChapter === "CECOffice" ? "show" : ""
+                  }`}
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className="accordion-body">
+                    <p>info images video etc</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion-item">
+                <h2 className="accordion-header">
+                  <button
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded={activeChapter === "CU"}
+                    aria-controls="collapseFour"
+                    onClick={() =>
+                      handleChapterClick(
+                        "CU",
+                        [-99.11774141796508, 19.430463313105125]
+                      )
+                    }
+                  >
+                    CU Office
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  className={`accordion-collapse collapse ${
+                    activeChapter === "CU" ? "show" : ""
+                  }`}
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className="accordion-body">
+                    <p>info images video etc</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion-item">
+                <h2 className="accordion-header">
+                  <button
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded={activeChapter === "USC"}
+                    aria-controls="collapseFive"
+                    onClick={() =>
+                      handleChapterClick(
+                        "USC",
+                        [-77.00898612698629, 38.890101740919036]
+                      )
+                    }
+                  >
+                    United State Capitol
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  className={`accordion-collapse collapse ${
+                    activeChapter === "USC" ? "show" : ""
+                  }`}
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className="accordion-body">
+                    <p>info images video etc</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
