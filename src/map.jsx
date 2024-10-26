@@ -1,26 +1,28 @@
-// MapComponent.jsx
 import React, {
   useEffect,
   useRef,
+  useState,
   forwardRef,
   useImperativeHandle
 } from "react";
 import mapboxgl from "mapbox-gl";
-import chapters from "./chapterData"; // Import the unified chapter data
+import * as turf from "@turf/turf";
+import chapters from "./chapterData";
 
 mapboxgl.accessToken =
-  "pk.eyJ1IjoiaWtlcmx1bmEiLCJhIjoiY20yZGp1ZnI3MGg4aDJrc2JiOHcycWI1aiJ9.-phioW5X0i28dlx2B1VJDg"; // Replace with your Mapbox access token
+  "pk.eyJ1IjoiaWtlcmx1bmEiLCJhIjoiY20yZGp1ZnI3MGg4aDJrc2JiOHcycWI1aiJ9.-phioW5X0i28dlx2B1VJDg";
 
 const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
   const mapContainer = useRef(null);
   const mapInstance = useRef(null);
+  const [lineLayerVisible, setLineLayerVisible] = useState(false); // State to toggle line visibility
 
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/ikerluna/cm2dk18gv007l01ph2anbepkk", // Replace with your Mapbox style URL
-      center: [-99.1332, 19.4326], // Coordinates for Mexico City
-      zoom: 1.2 // Adjust zoom level for a closer view of Mexico City
+      style: "mapbox://styles/ikerluna/cm2dk18gv007l01ph2anbepkk",
+      center: [-99.1332, 19.4326],
+      zoom: 1.2
     });
 
     mapInstance.current = map;
@@ -43,28 +45,101 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
       });
     });
 
+    // Prepare line data using Turf.js
+    const lineCoordinates = chapters.map((chapter) => chapter.coordinates);
+    const line = turf.lineString(lineCoordinates);
+
+    // Add the line source and layer (but make it initially hidden)
+    map.on("load", () => {
+      map.addSource("line", {
+        type: "geojson",
+        data: line
+      });
+
+      map.addLayer({
+        id: "lineLayer",
+        type: "line",
+        source: "line",
+        layout: {
+          "line-join": "round",
+          "line-cap": "round"
+        },
+        paint: {
+          "line-color": "#ff0000",
+          "line-width": 2
+        },
+        visibility: "none" // Initially hidden
+      });
+    });
+
     return () => map.remove(); // Clean up on component unmount
   }, [onMarkerClick]);
+
+  // Function to toggle line layer visibility
+  const toggleLineLayer = () => {
+    if (mapInstance.current) {
+      const visibility = mapInstance.current.getLayoutProperty(
+        "lineLayer",
+        "visibility"
+      );
+
+      if (visibility === "visible") {
+        mapInstance.current.setLayoutProperty(
+          "lineLayer",
+          "visibility",
+          "none"
+        );
+      } else {
+        mapInstance.current.setLayoutProperty(
+          "lineLayer",
+          "visibility",
+          "visible"
+        );
+      }
+
+      // Update state
+      setLineLayerVisible(!lineLayerVisible);
+    }
+  };
 
   useImperativeHandle(ref, () => ({
     flyToLocation: (coordinates) => {
       mapInstance.current.flyTo({
         center: coordinates,
         zoom: 10,
-        essential: true // Smooth transition
+        essential: true
       });
     }
   }));
 
   return (
-    <div
-      ref={mapContainer}
-      style={{
-        width: "100%", // Fill the width of the container
-        height: "100%", // Fill the height of the container
-        position: "relative"
-      }}
-    />
+    <div style={{ position: "relative", width: "100%", height: "100%" }}>
+      <div
+        ref={mapContainer}
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "relative"
+        }}
+      />
+      {/* Toggle Button */}
+      <button
+        onClick={toggleLineLayer}
+        style={{
+          position: "absolute",
+          top: "10px",
+          left: "10px",
+          padding: "10px",
+          background: lineLayerVisible ? "#ff0000" : "#888",
+          color: "#fff",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer"
+        }}
+      >
+        {lineLayerVisible ? "Hide Connections" : "Show Connections"}
+      </button>
+    </div>
   );
 });
 
