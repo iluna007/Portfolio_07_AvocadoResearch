@@ -1,7 +1,9 @@
 import React, { useState, useRef } from "react";
 import MapComponent from "./map";
 import chapters from "./chapterData";
-import ChapterButton from "./ChapterButton"; // Import as JSX component
+import ChapterButton from "./ChapterButton";
+import { Accordion } from "react-bootstrap"; // Import Accordion from Bootstrap
+// Import as JSX component
 
 const Body1 = () => {
   const [activeChapter, setActiveChapter] = useState(null);
@@ -56,3 +58,9 @@ const Body1 = () => {
 };
 
 export default Body1;
+
+/*
+xxx
+
+xxx
+*/
