@@ -8,6 +8,13 @@ const chapters = [
       "/logos/SENASICA.jpg",
       "/logos/USDA.jpg"
     ],
+    docus: [
+      "/documents/CNF.jpeg",
+      "/documents/SAR.jpeg",
+      "/documents/SADR.jpeg",
+      "/documents/SENASICA.jpeg",
+      "/documents/USDA.jpeg"
+    ],
     description: `Land tenure and resource ownership are the legal precondition of the avocado industry in Michoacán. Article 27 of the Mexican Constitution (1917) states: 
 
 “The property of all land and water within national territory is originally owned by the Nation, who has the right to transfer this ownership to particulars. Hence, private property is a privilege created by the Nation.”
@@ -33,6 +40,7 @@ This article entrenched ownership of natural resources in Mexico to the State. A
       "/logos/IPP.jpeg",
       "/logos/CPP.jpg"
     ],
+    docus: ["/documents/UCO.jpeg"],
     description: `The Nuevo Laredo/Laredo Border is the principal border crossing for produce exports between Mexico and the United States. The World Trade Bridge is where the majority of commercial trucks cross. This border crossing is regulated by extensive international, Mexican, and United States bodies. Notably, the US Department of Agriculture’s (USDA) Animal Health and Plant Inspection Service (AHPIS) regulates the import of avocados across this border.
 
 The legislative foundation of APHIS, including its capacity to inspect agricultural products, is established by the following legislation: 
@@ -47,6 +55,7 @@ Before they arrive at the border, an UMSCA Certificate of Origin must be obtaine
     name: "3: UNITED STATES LEGISLATURE ",
     coordinates: [-77.00901831719571, 38.89008083562472],
     logo: ["/logos/UOE.jpg", "/logos/UTR.png"],
+    docus: ["/documents/HAA.jpeg", "/documents/UAC.jpeg"],
     description: `The legal context for the expansion of the Mexican avocado industry was established by the 1994 trade agreement between Mexico, the US, and Canada—the North American Free Trade Agreement (NAFTA). Michoacán was the only avocado-producing region approved to export avocados to the US market.
 
 The US passed The Hass Avocado Promotion, Research and Information Act (2000) with the stated purpose to:
@@ -63,6 +72,14 @@ In June 2022, the Jalisco region was approved to export avocados to the US Marke
     name: "4: MEXICAN LEGISLATURE ",
     coordinates: [-99.11754939088065, 19.430420630935863],
     logo: ["/logos/EUM.jpg"],
+    docus: [
+      "/documents/SFD.jpeg",
+      "/documents/NAL.jpeg",
+      "/documents/GEP.jpeg",
+      "/documents/NNP.jpeg",
+      "/documents/NEC.jpeg",
+      "/documents/BIO.jpeg"
+    ],
     description: `In addition to the North American Free Trade Agreement (NAFTA), the massive expansion of the avocado industry in Michoacán was facilitated by the 1992 reforms of Ley Agraria (Agrarian Law), which allowed for the privatisation and sale/lease of ejido (communal) lands.
 
 Also in 1992, changes to the Ley General De Desarrollo Forestal Sustentable (General Law of Sustainable Forestry Development) encouraged development of forest lands for industry and reduced government regulation of and intervention into deforestation.
@@ -73,6 +90,11 @@ Since 1988, environmental laws in Mexico have been defined by the framework esta
     name: "5: COMMISSION OF ENVIRONMENT COOPERATION",
     coordinates: [-73.56440295362928, 45.501020957368596],
     logo: ["/logos/CEC.jpeg"],
+    docus: [
+      "/documents/CSF.jpeg",
+      "/documents/CSR.jpeg",
+      "/documents/CMR.jpeg"
+    ],
     description: `The Commission of Environmental Cooperation was established to implement the North American Agreement on Environmental Cooperation (NAAEC). The NAAEC is an environmental agreement between the United States of America, Canada, and Mexico that was legislated alongside NAFTA in 1994. The CEC now operates alongside the UMSCA.
 
 Submission SEM-23-002 (Avocado Production in Michoacán) was submitted under UMSCA in 2023 by an anonymous citizen, contending that Mexico is “failing to effectively enforce its environmental laws to protect forest ecosystems and water quality from the adverse environmental impacts of avocado production in Michoacán, Mexico.” The submitter described the situation as ecocide.
@@ -83,6 +105,7 @@ The Secretariat determined that the submission warrants the preparation of a fac
     name: "6: RV FRESH FOODS",
     coordinates: [-102.02889366747085, 19.399041789260906],
     logo: ["/logos/DOL.jpeg", "/logos/EUM.jpg", "/logos/UTR.png"],
+    docus: ["/documents/RVF.jpeg"],
     description: `Complaints about specific facility labour violations can be investigated under the UMSCA through the Rapid Response Labour Mechanism (RRLM). Investigations under this mechanism are regulated by the UMSCA Implementation Act.
 
 In February 2024, the US asked Mexico to review whether workers at the RV Fresh Foods facility (a company producing guacamole for export to the US) are being denied the right to freedom of association and collective bargaining. This request coincided with the US suspending their tariff calculations for the facility. From the US’s request:
@@ -94,12 +117,8 @@ On July 15, 2024, the US and Mexico announced that the submission was resolved, 
   {
     name: "7: AVOCADO EXPORTING PRODUCERS AND PACKERS OF MEXICO",
     coordinates: [-102.03742519175485, 19.387245090125127],
-    logo: [
-      "/logos/APEAM.jpeg",
-      "/logos/USDA.jpg",
-      "/logos/APHIS.jpeg",
-      "/logos/SENASICA.jpg"
-    ],
+    logo: [],
+    docus: ["/documents/HAA.jpeg", "/documents/UAC.jpeg"],
     description: `Trade between the US and Mexico functions according to the Operational Work Plan (OWP) signed by both countries.
 
 The Operational Work Plan stipulates that one industry ‘Cooperator’ represents all producers and packers who export to the US. The Association of Avocado Exporting Producers and Packers of Mexico (APEAM) is this ‘Cooperator’ under the OWP. In a report on the avocado export industry in Mexico, Climate Rights International noted: “packing houses pay an initial fee of US$250,000 to APEAM to register, plus a fee per kilogram of avocados processed.”
@@ -115,6 +134,7 @@ APEAM and the Mexican Hass Avocado Importers Association (MHAIA) are parent comp
       "/logos/CNF.jpg",
       "/logos/PROFEPA.jpeg"
     ],
+    docus: [],
     description: `Illegal deforestation and forest fires as a method of illegal land-use change have been directly linked to the expansion of avocado orchards in Michoacán, especially for export. According to an investigation by Climate Rights International (CRI), “estimates suggest that more than 25,000 acres of Michoacán avocado orchards certified to export to the United States in 2023 are located on land that was forest as of 2014.”
 
 A follow-up report in 2024 by CRI found that “[l]eading U.S. avocado importers Calavo Growers, Fresh Del Monte Produce, Mission Produce, and West Pak Avocado have continued to source from Mexican orchards containing illegally deforested land in 2023 and 2024 even after being informed of deforestation within their supply chains.”
@@ -130,6 +150,7 @@ APEAM has no procedures or policies in place related to deforestation or water t
       "/logos/CNA.jpeg",
       "/logos/IMTA.jpg"
     ],
+    docus: [],
     description: `According to the investigation by Climate Rights International, Michoacán’s State Commission for Water and Watershed Management (CEAC) estimated that 50 percent of all wells in the state are unauthorized. This report also found that the “federal water agency that is charged with investigating and administratively sanctioning water theft rarely does so in Michoacán and Jalisco.”
 
 One community member described: “They are exporting our water in the form of fruit.”`
