@@ -20,7 +20,7 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/ikerluna/cm2dk18gv007l01ph2anbepkk",
+      style: "mapbox://styles/ikerluna/cm2tj3yg100gh01pm3h66dwks",
       center: [-99.1332, 19.4326],
       zoom: 1.2
     });
