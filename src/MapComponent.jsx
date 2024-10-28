@@ -32,7 +32,7 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
       // Create a custom yellow marker element
       const el = document.createElement("div");
       el.className = "custom-marker";
-      el.style.backgroundColor = "yellow";
+      el.style.backgroundColor = "white";
       el.style.width = "20px";
       el.style.height = "20px";
       el.style.borderRadius = "50%";
@@ -83,7 +83,8 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
         },
         paint: {
           "line-color": "#ff0000",
-          "line-width": 2
+          "line-width": 2,
+          "line-dasharray": [1, 2] // Creates a dotted line (1px dash, 2px gap)
         },
         visibility: "none"
       });
