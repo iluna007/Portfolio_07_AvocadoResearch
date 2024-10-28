@@ -100,7 +100,7 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
     flyToLocation: (coordinates) => {
       mapInstance.current.flyTo({
         center: coordinates,
-        zoom: 10,
+        zoom: 16,
         essential: true
       });
     }
