@@ -1,11 +1,14 @@
 import React from "react";
-import frase from "../frase"; // Adjust path as necessary
+import phrase from "../phrase"; // Adjust path as necessary
+import "./Navbar2.css"; // Import the CSS
 
 const Navbar2 = () => {
   return (
     <nav className="navbar bg-body-black">
       <div className="scrolling-text-container">
-        <div className="scrolling-text">{frase}</div>
+        <div className="scrolling-text" data-text={phrase}>
+          {phrase}
+        </div>
       </div>
     </nav>
   );

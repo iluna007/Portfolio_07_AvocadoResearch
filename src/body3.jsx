@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import MapComponent from "./map";
+import MapComponent from "./MapComponent";
 import chapters from "./chapterData";
 import { Accordion } from "react-bootstrap";
 
@@ -23,7 +23,8 @@ const Body3 = () => {
           <MapComponent ref={mapRef} onMarkerClick={setActiveChapter} />
         </div>
         <div className="col d-flex align-items-center justify-content-center overflow-auto">
-          <Accordion defaultActiveKey="0" flush className="w-100">
+          {/* Remove defaultActiveKey to keep all items closed initially */}
+          <Accordion flush className="w-100">
             {chapters.map((chapter, index) => (
               <Accordion.Item eventKey={index.toString()} key={index}>
                 <Accordion.Header

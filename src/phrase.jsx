@@ -1,6 +1,6 @@
 import React from "react";
 
-const frase = (
+const phrase = (
   <div>
     <p>
       Legal and Bureaucratic Architecture of Avocado Industry “We Mexicans, at
@@ -16,4 +16,4 @@ const frase = (
   </div>
 );
 
-export default frase;
+export default phrase;

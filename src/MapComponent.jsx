@@ -1,9 +1,16 @@
-import React, { useEffect, useRef, useState, forwardRef, useImperativeHandle } from "react";
+import React, {
+  useEffect,
+  useRef,
+  useState,
+  forwardRef,
+  useImperativeHandle
+} from "react";
 import mapboxgl from "mapbox-gl";
 import * as turf from "@turf/turf";
 import chapters from "./chapterData";
 
-mapboxgl.accessToken = "pk.eyJ1IjoiaWtlcmx1bmEiLCJhIjoiY20yZGp1ZnI3MGg4aDJrc2JiOHcycWI1aiJ9.-phioW5X0i28dlx2B1VJDg";
+mapboxgl.accessToken =
+  "pk.eyJ1IjoiaWtlcmx1bmEiLCJhIjoiY20yZGp1ZnI3MGg4aDJrc2JiOHcycWI1aiJ9.-phioW5X0i28dlx2B1VJDg";
 
 const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
   const mapContainer = useRef(null);
@@ -20,13 +27,24 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
 
     mapInstance.current = map;
 
+    // Add markers dynamically
     chapters.forEach((chapter) => {
-      const marker = new mapboxgl.Marker()
+      // Create a custom yellow marker element
+      const el = document.createElement("div");
+      el.className = "custom-marker";
+      el.style.backgroundColor = "yellow";
+      el.style.width = "20px";
+      el.style.height = "20px";
+      el.style.borderRadius = "50%";
+      el.style.border = "2px solid black";
+
+      const marker = new mapboxgl.Marker(el)
         .setLngLat(chapter.coordinates)
         .addTo(map);
-
       const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
-        `<h3>${chapter.name}</h3><p>${chapter.description || "No description available."}</p>`
+        `<h3>${chapter.name}</h3><p>${
+          chapter.description || "No description available."
+        }</p>`
       );
       marker.setPopup(popup);
 
@@ -65,7 +83,10 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
 
   const toggleLineLayer = () => {
     if (mapInstance.current) {
-      const visibility = mapInstance.current.getLayoutProperty("lineLayer", "visibility");
+      const visibility = mapInstance.current.getLayoutProperty(
+        "lineLayer",
+        "visibility"
+      );
       mapInstance.current.setLayoutProperty(
         "lineLayer",
         "visibility",
@@ -102,3 +123,10 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
           cursor: "pointer"
         }}
       >
+        {lineLayerVisible ? "Hide Connections" : "Show Connections"}
+      </button>
+    </div>
+  );
+});
+
+export default MapComponent;
