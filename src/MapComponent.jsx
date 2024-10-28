@@ -122,20 +122,19 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
     <div style={{ position: "relative", width: "100%", height: "100%" }}>
       <div ref={mapContainer} className="w-100 h-100 position-relative" />
       <button
-        onClick={toggleLineLayer}
         style={{
           position: "absolute",
           top: "10px",
           left: "10px",
           padding: "10px",
-          background: lineLayerVisible ? "#ff0000" : "#888",
+          background: "#888",
           color: "#fff",
           border: "none",
           borderRadius: "5px",
-          cursor: "pointer"
+          cursor: "default"
         }}
       >
-        {lineLayerVisible ? "Hide Connections" : "Show Connections"}
+        Legal and Bureaucratic Architecture of Avocado Industry
       </button>
     </div>
   );
