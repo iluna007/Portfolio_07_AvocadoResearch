@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import MapComponent from "./MapComponent";
 import chapters from "./chapterData";
 import { Accordion } from "react-bootstrap";
+import "./App.css"; // Adjust the path if necessary
 
 const Body3 = () => {
   const [activeChapter, setActiveChapter] = useState(null);
@@ -17,13 +18,15 @@ const Body3 = () => {
   };
 
   return (
-    <div className="container-fluid vh-100 overflow-hidden p-0">
+    <div
+      className="container-fluid vh-100 overflow-hidden p-0"
+      style={{ backgroundColor: "black", color: "white" }}
+    >
       <div className="row h-100 m-0">
         <div className="col d-flex align-items-center justify-content-center">
           <MapComponent ref={mapRef} onMarkerClick={setActiveChapter} />
         </div>
         <div className="col d-flex align-items-center justify-content-center overflow-auto">
-          {/* Remove defaultActiveKey to keep all items closed initially */}
           <Accordion flush className="w-100">
             {chapters.map((chapter, index) => (
               <Accordion.Item eventKey={index.toString()} key={index}>
@@ -35,17 +38,14 @@ const Body3 = () => {
                   {chapter.name}
                 </Accordion.Header>
                 <Accordion.Body>
-                  <img
-                    src={chapter.logo}
-                    alt={`${chapter.name} logo`}
-                    style={{
-                      width: "100px",
-                      height: "auto",
-                      display: "block",
-                      margin: "10px auto"
-                    }}
-                  />
-                  <p>{chapter.description || "No description available."}</p>
+                  <div className="container">
+                    <div className="row">
+                      <div className="col justify-text">
+                        {chapter.description}
+                      </div>
+                      <div className="col-2">2 of 2</div>
+                    </div>
+                  </div>
                 </Accordion.Body>
               </Accordion.Item>
             ))}
