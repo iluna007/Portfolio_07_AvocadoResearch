@@ -1,0 +1,12 @@
+.quote-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.8); /* White text with 80% opacity */
+  font-size: 0.8rem; /* Smaller font size */
+  max-width: 80%; /* Reduce width for a compact quote style */
+  text-align: center;
+  font-style: italic;
+  line-height: 1.2;
+}
