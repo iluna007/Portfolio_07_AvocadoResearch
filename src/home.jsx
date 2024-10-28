@@ -1,12 +1,11 @@
-import React, { useEffect, useRef } from "react";
-import Body1 from "./body1";
-import Body2 from "./body2";
+import React from "react";
+import Body3 from "./body3";
 
 const Home = () => {
   return (
-    <>
-      <Body2 />
-    </>
+    <div className="vh-100 overflow-hidden">
+      <Body3 />
+    </div>
   );
 };
 

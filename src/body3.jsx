@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
 import MapComponent from "./map";
 import chapters from "./chapterData";
-import { Accordion } from "react-bootstrap"; // Import Accordion from Bootstrap
+import { Accordion } from "react-bootstrap";
 
-const Body2 = () => {
+const Body3 = () => {
   const [activeChapter, setActiveChapter] = useState(null);
   const mapRef = useRef(null);
 
@@ -17,13 +17,12 @@ const Body2 = () => {
   };
 
   return (
-    <div className="container-fluid text-center vh-100 p-0 body2-container">
-      <div className="row w-100 h-100 m-0">
-        <div className="col-lg-6 col-md-12 d-flex align-items-center h-100 p-0">
+    <div className="container-fluid vh-100 overflow-hidden p-0">
+      <div className="row h-100 m-0">
+        <div className="col d-flex align-items-center justify-content-center">
           <MapComponent ref={mapRef} onMarkerClick={setActiveChapter} />
         </div>
-
-        <div className="col-lg-6 col-md-12 d-flex flex-column align-items-center justify-content-center h-100 p-3">
+        <div className="col d-flex align-items-center justify-content-center overflow-auto">
           <Accordion defaultActiveKey="0" flush className="w-100">
             {chapters.map((chapter, index) => (
               <Accordion.Item eventKey={index.toString()} key={index}>
@@ -56,4 +55,4 @@ const Body2 = () => {
   );
 };
 
-export default Body2;
+export default Body3;
