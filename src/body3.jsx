@@ -26,8 +26,14 @@ const Body3 = () => {
         <div className="col d-flex align-items-center justify-content-center">
           <MapComponent ref={mapRef} onMarkerClick={setActiveChapter} />
         </div>
-        <div className="col d-flex align-items-center justify-content-center overflow-auto">
-          <Accordion flush className="w-100">
+        <div className="col d-flex align-items-stretch justify-content-center overflow-hidden">
+          <Accordion
+            flush
+            className="w-100 h-100" // Set Accordion to full width and height
+            style={{
+              overflowY: "auto" // Enable vertical scrolling if content overflows
+            }}
+          >
             {chapters.map((chapter, index) => (
               <Accordion.Item eventKey={index.toString()} key={index}>
                 <Accordion.Header
@@ -43,7 +49,7 @@ const Body3 = () => {
                       <div className="col justify-text">
                         {chapter.description}
                       </div>
-                      <div className="col-2">
+                      <div className="col-2 d-flex flex-wrap justify-content-center">
                         {chapter.docus.map((doc, docIndex) => (
                           <img
                             key={docIndex}

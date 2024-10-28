@@ -8,13 +8,7 @@ const chapters = [
       "/logos/SENASICA.jpg",
       "/logos/USDA.jpg"
     ],
-    docus: [
-      "/documents/CNF.jpeg",
-      "/documents/SAR.jpeg",
-      "/documents/SADR.jpeg",
-      "/documents/SENASICA.jpeg",
-      "/documents/USDA.jpeg"
-    ],
+    docus: ["/documents/MCC.jpg"],
     description: `Land tenure and resource ownership are the legal precondition of the avocado industry in Michoacán. Article 27 of the Mexican Constitution (1917) states: 
 
 “The property of all land and water within national territory is originally owned by the Nation, who has the right to transfer this ownership to particulars. Hence, private property is a privilege created by the Nation.”
@@ -117,8 +111,13 @@ On July 15, 2024, the US and Mexico announced that the submission was resolved, 
   {
     name: "7: AVOCADO EXPORTING PRODUCERS AND PACKERS OF MEXICO",
     coordinates: [-102.03742519175485, 19.387245090125127],
-    logo: [],
-    docus: ["/documents/HAA.jpeg", "/documents/UAC.jpeg"],
+    logo: [
+      "/logos/APEAM.jpeg",
+      "/logos/USDA.jpg",
+      "/logos/APHIS.jpeg",
+      "/logos/SENASICA.jpg"
+    ],
+    docus: [],
     description: `Trade between the US and Mexico functions according to the Operational Work Plan (OWP) signed by both countries.
 
 The Operational Work Plan stipulates that one industry ‘Cooperator’ represents all producers and packers who export to the US. The Association of Avocado Exporting Producers and Packers of Mexico (APEAM) is this ‘Cooperator’ under the OWP. In a report on the avocado export industry in Mexico, Climate Rights International noted: “packing houses pay an initial fee of US$250,000 to APEAM to register, plus a fee per kilogram of avocados processed.”
