@@ -31,12 +31,18 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
     chapters.forEach((chapter) => {
       // Create a custom yellow marker element
       const el = document.createElement("div");
-      el.className = "custom-marker";
+      el.className = "custom-marker1";
       el.style.backgroundColor = "white";
       el.style.width = "20px";
       el.style.height = "20px";
       el.style.borderRadius = "50%";
       el.style.border = "2px solid black";
+      el.className = "custom-marker";
+      el.style.width = "30px"; // Adjust width as needed
+      el.style.height = "30px"; // Adjust height as needed
+      el.style.backgroundImage = "url('/clickme.svg')"; // Path to SVG in public folder
+      el.style.backgroundSize = "cover";
+      el.style.backgroundPosition = "center";
 
       const marker = new mapboxgl.Marker(el)
         .setLngLat(chapter.coordinates)

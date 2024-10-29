@@ -65,14 +65,16 @@ In June 2022, the Jalisco region was approved to export avocados to the US Marke
   {
     name: "4: MEXICAN LEGISLATURE ",
     coordinates: [-99.11754939088065, 19.430420630935863],
-    logo: ["/logos/EUM.jpg"],
+    logo: [
+      "/logos/EUM.jpg",
+      "/logos/NNP.jpeg",
+      "/logos/NEC.jpg",
+      "/logos/BIO.jpg"
+    ],
     docus: [
       "/documents/SFD.jpeg",
       "/documents/NAL.jpeg",
-      "/documents/GEP.jpeg",
-      "/documents/NNP.jpeg",
-      "/documents/NEC.jpeg",
-      "/documents/BIO.jpeg"
+      "/documents/GEP.jpeg"
     ],
     description: `In addition to the North American Free Trade Agreement (NAFTA), the massive expansion of the avocado industry in Michoacán was facilitated by the 1992 reforms of Ley Agraria (Agrarian Law), which allowed for the privatisation and sale/lease of ejido (communal) lands.
 
@@ -109,7 +111,7 @@ In February 2024, the US asked Mexico to review whether workers at the RV Fresh 
 On July 15, 2024, the US and Mexico announced that the submission was resolved, and facility, government, and union changes were stipulated. This was the first time the United States has invoked the RRLM in the food manufacturing sector and could set a precedent for union advocacy in the avocado industry.`
   },
   {
-    name: "7: AVOCADO EXPORTING PRODUCERS AND PACKERS OF MEXICO",
+    name: "7: AVOCADO EXPORTING PRODUCERS AND PACKERS OF MEXICO (APEAM)",
     coordinates: [-102.03742519175485, 19.387245090125127],
     logo: [
       "/logos/APEAM.jpeg",
@@ -125,7 +127,7 @@ The Operational Work Plan stipulates that one industry ‘Cooperator’ represen
 APEAM and the Mexican Hass Avocado Importers Association (MHAIA) are parent companies to the US-based company Avocados From Mexico. These two organizations created Avocados From Mexico under the US Hass Avocado Promotion, Research, and Information Act (2000), with oversight from the United States Department of Agriculture (USDA). The stated role of this organization is “promoting a brand for Mexican avocados and growing the demand for the precious fruit throughout the US.”`
   },
   {
-    name: "8: LAND USE CHANGE, FOREST AND FIRES",
+    name: "8: COMISIÓN FORESTAL DEL ESTADO DE MICHOACÁN",
     coordinates: [-101.18170859902112, 19.698126725662217],
     logo: [
       "/logos/EUM.jpg",
@@ -141,7 +143,7 @@ A follow-up report in 2024 by CRI found that “[l]eading U.S. avocado importers
 APEAM has no procedures or policies in place related to deforestation or water theft in avocado production.`
   },
   {
-    name: "9: ILLEGAL WATER",
+    name: "9: COMISIÓN ESTATAL DEL AGUA Y GESTIÓN DE CUENCAS(CEAC)",
     coordinates: [-101.17445496023151, 19.680693050883992],
     logo: [
       "/logos/CEAC.png",
