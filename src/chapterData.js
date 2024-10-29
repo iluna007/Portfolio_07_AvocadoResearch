@@ -143,7 +143,7 @@ A follow-up report in 2024 by CRI found that “[l]eading U.S. avocado importers
 APEAM has no procedures or policies in place related to deforestation or water theft in avocado production.`
   },
   {
-    name: "9: COMISIÓN ESTATAL DEL AGUA Y GESTIÓN DE CUENCAS(CEAC)",
+    name: "9: COMISIÓN ESTATAL DEL AGUA Y GESTIÓN DE CUENCAS",
     coordinates: [-101.17445496023151, 19.680693050883992],
     logo: [
       "/logos/CEAC.png",
