@@ -140,7 +140,7 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
           cursor: "default"
         }}
       >
-        Legal and Bureaucratic Architecture of Avocado Industry
+        Legal and Bureaucratic Geography of Michoacán’s Avocado Industry
       </button>
     </div>
   );
