@@ -47,7 +47,7 @@ const Body3 = () => {
                   <div className="container">
                     <div className="row">
                       <div className="col justify-text">
-                        {chapter.description}
+                        {chapter.description1}
                       </div>
                       <div className="col-2 d-flex flex-wrap justify-content-center"></div>
                     </div>

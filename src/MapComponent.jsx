@@ -49,14 +49,12 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
         .addTo(map);
       const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
           <div style="max-width: 250px; overflow-y: auto; padding: 10px; color: black;">
-            <h3 style="margin-bottom: 10px; font-size: 14px;">${
-              chapter.name
-            }</h3>
+            
             <div style="display: flex; flex-wrap: wrap; gap: 5px; max-height: 150px; overflow-y: auto;">
               ${chapter.logo
                 .map(
                   (logo) =>
-                    `<img src="${logo}" alt="Logo" style="width: 50px; height: 50px; object-fit: contain;" />`
+                    `<img src="${logo}" alt="Logo" style="width: 40px; height: 40px; object-fit: contain;" />`
                 )
                 .join("")}
             </div>

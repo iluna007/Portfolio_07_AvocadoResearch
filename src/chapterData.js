@@ -9,7 +9,7 @@ const chapters = [
       "/logos/USDA.jpg"
     ],
     docus: ["/documents/MCC.jpg"],
-    description: `Land tenure and resource ownership were the precondition which facilitated the avocado industry expansion in Michoacán under Mexican law. Article 27 of the Mexican Constitution (1917) states:  
+    description1: `Land tenure and resource ownership were the precondition which facilitated the avocado industry expansion in Michoacán under Mexican law. Article 27 of the Mexican Constitution (1917) states:  
 
  
 
@@ -41,7 +41,7 @@ This article entrenched ownership of natural resources in Mexico to the State. I
       "/logos/CPP.jpg"
     ],
     docus: ["/documents/UCO.jpeg"],
-    description: `The Nuevo Laredo/Laredo Border is the principal border crossing for produce exports between Mexico and the United States. The World Trade Bridge is where the majority of commercial trucks cross. This border crossing is regulated by extensive international, Mexican, and United States bodies. Notably, the US Department of Agriculture’s (USDA) Animal Health and Plant Inspection Service (AHPIS) regulates the import of avocados across this border.
+    description1: `The Nuevo Laredo/Laredo Border is the principal border crossing for produce exports between Mexico and the United States. The World Trade Bridge is where the majority of commercial trucks cross. This border crossing is regulated by extensive international, Mexican, and United States bodies. Notably, the US Department of Agriculture’s (USDA) Animal Health and Plant Inspection Service (AHPIS) regulates the import of avocados across this border.
 
 The Nuevo Laredo/Laredo Border is the principal border crossing for produce exports between Mexico and the United States. The World Trade Bridge is where the majority of commercial trucks cross. The crossing is regulated by extensive international, Mexican and United States bodies. The US Department of Agriculture’s (USDA) Animal Health and Plant Inspection Service (AHPIS) regulates the import of avocados across this border.  
 
@@ -66,7 +66,7 @@ For avocados to cross this border they must have received the Phytosanitary Cert
     coordinates: [-77.00901831719571, 38.89008083562472],
     logo: ["/logos/UOE.jpg", "/logos/UTR.png"],
     docus: ["/documents/HAA.jpeg", "/documents/UAC.jpeg"],
-    description: `The 1994 North American Free Trade Agreement (NAFTA) (Mexico-US-Canada) established the legal context and market demand which caused the expansion of the Mexican avocado industry. Michoacán was the only avocado producing region which was approved to export avocados to the new US market. 
+    description1: `The 1994 North American Free Trade Agreement (NAFTA) (Mexico-US-Canada) established the legal context and market demand which caused the expansion of the Mexican avocado industry. Michoacán was the only avocado producing region which was approved to export avocados to the new US market. 
 
 The US passed The Hass Avocado Promotion, Research and Information Act (2000) with the stated purpose to: 
 
@@ -94,7 +94,7 @@ The NAFTA was subsequently redrafted in 2018 and exports between these three cou
       "/documents/NAL.jpeg",
       "/documents/GEP.jpeg"
     ],
-    description: `In addition to the North American Free Trade Agreement (NAFTA), the massive expansion of the avocado industry in Michoacán was facilitated by the 1992 reforms of Ley Agraria (Agrarian Law), which allowed for the privatisation and sale/lease of ejido lands.  
+    description1: `In addition to the North American Free Trade Agreement (NAFTA), the massive expansion of the avocado industry in Michoacán was facilitated by the 1992 reforms of Ley Agraria (Agrarian Law), which allowed for the privatisation and sale/lease of ejido lands.  
 
 Also in 1992, changes to the Ley General de Desarrollo Forestal Sustentable (General Law of Sustainable Forestry Development) encouraged the development of forest lands for industry whilst reducing government regulation of and intervention into deforestation.  
 
@@ -109,7 +109,7 @@ Since 1988 environmental laws in Mexico have been defined by the framework estab
       "/documents/CSR.jpeg",
       "/documents/CMR.jpeg"
     ],
-    description: `The Commission of Environmental Cooperation (CEC) was established to implement the North American Agreement on Environmental Cooperation (NAAEC). The NAAEC is an environmental agreement between the United States of America, Canada and Mexico that was legislated alongside the NAFTA in 1994. The CEC now operates together with the USMCA. Complaints can be submitted to the CEC about any of the member states for review and potential investigation. 
+    description1: `The Commission of Environmental Cooperation (CEC) was established to implement the North American Agreement on Environmental Cooperation (NAAEC). The NAAEC is an environmental agreement between the United States of America, Canada and Mexico that was legislated alongside the NAFTA in 1994. The CEC now operates together with the USMCA. Complaints can be submitted to the CEC about any of the member states for review and potential investigation. 
 
 SEM-23-002 was submitted to the CEC in 2023 by an anonymous citizen alleging that the environmental effects of the avocado industry in Mexico constitute ecocide. The submission contended that Mexico is “failing to effectively enforce its environmental laws to protect forest ecosystems and water quality from the adverse environmental impacts of avocado production in Michoacán, Mexico.”  
 
@@ -146,7 +146,7 @@ On July 15, 2024, the US and Mexico announced that the submission was resolved, 
       "/logos/SENASICA.jpg"
     ],
     docus: [],
-    description: `Trade between the US and Mexico functions according to the Operational Work Plan (OWP) signed by both countries.  
+    description1: `Trade between the US and Mexico functions according to the Operational Work Plan (OWP) signed by both countries.  
 
  
 
@@ -170,7 +170,7 @@ The stated role of this organisation is “promoting a brand for Mexican avocado
       "/logos/PROFEPA.jpeg"
     ],
     docus: [],
-    description: `Illegal deforestation and forest fires as a method of illegal land-use change have been directly linked to the expansion of avocado orchards in Michoacán, especially for export. According to the investigation by Climate Rights International (CRI), “estimates suggest that more than 25,000 acres of Michoacán avocado orchards certified to export to the United States in 2023 are located on land that was forest as of 2014.”  APEAM has no procedures or policies in place related to deforestation or water theft in avocado production. 
+    description1: `Illegal deforestation and forest fires as a method of illegal land-use change have been directly linked to the expansion of avocado orchards in Michoacán, especially for export. According to the investigation by Climate Rights International (CRI), “estimates suggest that more than 25,000 acres of Michoacán avocado orchards certified to export to the United States in 2023 are located on land that was forest as of 2014.”  APEAM has no procedures or policies in place related to deforestation or water theft in avocado production. 
 
  
 
@@ -190,7 +190,7 @@ In August 2024 the US non-profit Organic Consumers Association filed a case in W
       "/logos/IMTA.jpg"
     ],
     docus: [],
-    description: `According to the investigation by Climate Rights International, Michoacán’s State Commission for Water and Watershed Management (CEAC) estimated that 50 percent of all wells in the state are unauthorized. This report also found that the “federal water agency that is charged with investigating and administratively sanctioning water theft rarely does so in Michoacán and Jalisco.” 
+    description1: `According to the investigation by Climate Rights International, Michoacán’s State Commission for Water and Watershed Management (CEAC) estimated that 50 percent of all wells in the state are unauthorized. This report also found that the “federal water agency that is charged with investigating and administratively sanctioning water theft rarely does so in Michoacán and Jalisco.” 
 
  One community member described: “They are exporting our water in the form of fruit.”`
   }
