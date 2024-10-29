@@ -49,22 +49,7 @@ const Body3 = () => {
                       <div className="col justify-text">
                         {chapter.description}
                       </div>
-                      <div className="col-2 d-flex flex-wrap justify-content-center">
-                        {chapter.docus.map((doc, docIndex) => (
-                          <img
-                            key={docIndex}
-                            src={doc}
-                            alt={`Document ${docIndex + 1}`}
-                            style={{
-                              width: "100%",
-                              maxWidth: "60px", // Adjust size as needed
-                              height: "auto",
-                              marginBottom: "5px",
-                              objectFit: "contain"
-                            }}
-                          />
-                        ))}
-                      </div>
+                      <div className="col-2 d-flex flex-wrap justify-content-center"></div>
                     </div>
                   </div>
                 </Accordion.Body>
