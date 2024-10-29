@@ -29,9 +29,9 @@ const Body3 = () => {
         <div className="col d-flex align-items-stretch justify-content-center overflow-hidden">
           <Accordion
             flush
-            className="w-100 h-100" // Set Accordion to full width and height
+            className="w-100 h-100"
             style={{
-              overflowY: "auto" // Enable vertical scrolling if content overflows
+              overflowY: "auto"
             }}
           >
             {chapters.map((chapter, index) => (
@@ -45,11 +45,16 @@ const Body3 = () => {
                 </Accordion.Header>
                 <Accordion.Body>
                   <div className="container">
-                    <div className="row">
-                      <div className="col justify-text">
-                        {chapter.description1}
-                      </div>
-                      <div className="col-2 d-flex flex-wrap justify-content-center"></div>
+                    <div className="flex">
+                      {/* Map through each description property dynamically */}
+                      {[...Array(7)].map((_, i) => {
+                        const desc = chapter[`description${i + 1}`];
+                        return desc ? (
+                          <div key={i} className="col justify-text mb-1">
+                            {desc}
+                          </div>
+                        ) : null;
+                      })}
                     </div>
                   </div>
                 </Accordion.Body>
