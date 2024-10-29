@@ -56,7 +56,7 @@ const MapComponent = forwardRef(({ onMarkerClick }, ref) => {
               ${chapter.logo
                 .map(
                   (logo) =>
-                    `<img src="${logo}" alt="Logo" style="width: 40px; height: 40px; object-fit: contain;" />`
+                    `<img src="${logo}" alt="Logo" style="width: 50px; height: 50px; object-fit: contain;" />`
                 )
                 .join("")}
             </div>
